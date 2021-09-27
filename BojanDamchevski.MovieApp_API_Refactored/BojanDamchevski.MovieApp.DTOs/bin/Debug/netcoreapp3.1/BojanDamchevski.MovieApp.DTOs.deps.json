@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "BojanDamchevski.MovieApp.DTOs/1.0.0": {
+        "dependencies": {
+          "BojanDamchevski.MovieApp.Domain": "1.0.0"
+        },
+        "runtime": {
+          "BojanDamchevski.MovieApp.DTOs.dll": {}
+        }
+      },
+      "BojanDamchevski.MovieApp.Domain/1.0.0": {
+        "runtime": {
+          "BojanDamchevski.MovieApp.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BojanDamchevski.MovieApp.DTOs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BojanDamchevski.MovieApp.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

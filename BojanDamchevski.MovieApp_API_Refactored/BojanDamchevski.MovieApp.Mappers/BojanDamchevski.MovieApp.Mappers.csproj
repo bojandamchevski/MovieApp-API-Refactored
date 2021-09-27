@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BojanDamchevski.MovieApp.Domain\BojanDamchevski.MovieApp.Domain.csproj" />
+    <ProjectReference Include="..\BojanDamchevski.MovieApp.DTOs\BojanDamchevski.MovieApp.DTOs.csproj" />
+  </ItemGroup>
+
+</Project>
