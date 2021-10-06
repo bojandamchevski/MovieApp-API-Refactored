@@ -1,9 +1,7 @@
-﻿using BojanDamchevski.MovieApp.Domain.Enums;
-using BojanDamchevski.MovieApp.DTOs.DirectorDTOs;
+﻿using BojanDamchevski.MovieApp.DTOs.DirectorDTOs;
 using BojanDamchevski.MovieApp.DTOs.MovieDTOs;
 using BojanDamchevski.MovieApp.Services.Interfaces;
 using BojanDamchevski.MovieApp.Shared.CustomExceptions;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -13,38 +11,25 @@ using System.Threading.Tasks;
 
 namespace BojanDamchevski.MovieApp.Controllers
 {
-    //[Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    public class MoviesController : ControllerBase
+    public class DirectorsController : ControllerBase
     {
         private IMovieService _movieService;
+        private IDirectorService _directorService;
 
-        public MoviesController(IMovieService movieService)
+        public DirectorsController(IMovieService movieService, IDirectorService directorService)
         {
             _movieService = movieService;
+            _directorService = directorService;
         }
 
-        [HttpGet("get-all-movies")]
-
-        public ActionResult<List<MovieDTO>> GetAll()
+        [HttpGet("get-director-by-id")]
+        public ActionResult<DirectorDTO> GetDirector(int id)
         {
             try
             {
-                return StatusCode(StatusCodes.Status200OK, _movieService.GetAll());
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Server error");
-            }
-        }
-
-        [HttpGet("get-movie-by-id")]
-        public ActionResult<MovieDTO> GetMovie(int id)
-        {
-            try
-            {
-                return StatusCode(StatusCodes.Status200OK, _movieService.GetById(id));
+                return StatusCode(StatusCodes.Status200OK, _directorService.GetById(id));
             }
             catch (ResourceNotFoundException ex)
             {
@@ -56,13 +41,13 @@ namespace BojanDamchevski.MovieApp.Controllers
             }
         }
 
-        [HttpPost("add-new-movie")]
-        public ActionResult<MovieDTO> AddNewMovie([FromQuery] MovieDTO movieDTO)
+        [HttpPost("add-new-director")]
+        public ActionResult<DirectorDTO> AddNewDirector([FromQuery] DirectorDTO directorDTO)
         {
             try
             {
-                _movieService.AddNewMovie(movieDTO);
-                return StatusCode(StatusCodes.Status201Created, "Movie created");
+                _directorService.AddNewDirector(directorDTO);
+                return StatusCode(StatusCodes.Status201Created, "Director created");
             }
             catch (Exception ex)
             {
@@ -70,14 +55,28 @@ namespace BojanDamchevski.MovieApp.Controllers
             }
         }
 
-        [HttpDelete("delete-movie")]
-        public IActionResult DeleteMovie(int id)
+        [HttpGet("get-all-directors")]
+
+        public ActionResult<List<DirectorDTO>> GetAllDirectors()
+        {
+            try
+            {
+                return StatusCode(StatusCodes.Status200OK, _directorService.GetAll());
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Server error");
+            }
+        }
+
+        [HttpDelete("delete-director")]
+        public IActionResult DeleteDirector(int id)
         {
             try
             {
                 if (id > 0)
                 {
-                    _movieService.DeleteMovie(id);
+                    _directorService.DeleteDirector(id);
                     return StatusCode(StatusCodes.Status202Accepted);
                 }
                 return StatusCode(StatusCodes.Status404NotFound);
@@ -88,56 +87,42 @@ namespace BojanDamchevski.MovieApp.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Movie not found");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Director not found");
             }
         }
 
-        [HttpPut("update-movie")]
-        public IActionResult UpdateMovie([FromBody] MovieDTO movieDTO)
+        [HttpPut("update-director")]
+        public IActionResult UpdateDirector([FromBody] DirectorDTO directorDTO)
         {
             try
             {
-                if (movieDTO != null)
+                if (directorDTO != null)
                 {
-                    _movieService.UpdateMovie(movieDTO);
+                    _directorService.UpdateDirector(directorDTO);
                     return StatusCode(StatusCodes.Status202Accepted);
                 }
                 return StatusCode(StatusCodes.Status404NotFound);
             }
-            catch (UserException ex)
+            catch (DirectorException ex)
             {
                 return StatusCode(StatusCodes.Status401Unauthorized, "You are not authorized for this action");
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Movie not found");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Director not found");
             }
         }
 
-        [HttpGet("filter-by-genre-year")]
-        public ActionResult<List<MovieDTO>> Filter(MovieGenre genre, int year)
+        [HttpGet("filter-by-country")]
+        public ActionResult<List<MovieDTO>> Filter(string country)
         {
             try
             {
-                if (genre == 0 && year == 0)
+                if (string.IsNullOrEmpty(country))
                 {
                     return StatusCode(StatusCodes.Status400BadRequest, "Filter parameter required!");
                 }
-                if (genre == 0)
-                {
-                    List<MovieDTO> movies = _movieService.GetAll()
-                        .Where(x => x.Year == year).ToList();
-                    return StatusCode(StatusCodes.Status200OK, movies);
-                }
-                if (year == 0)
-                {
-                    List<MovieDTO> movies = _movieService.GetAll()
-                        .Where(x => x.Genre == genre).ToList();
-                    return StatusCode(StatusCodes.Status200OK, movies);
-                }
-                List<MovieDTO> moviesFiltered = _movieService.GetAll()
-                    .Where(x => x.Genre == genre && x.Year == year).ToList();
-                return StatusCode(StatusCodes.Status200OK, moviesFiltered);
+                return StatusCode(StatusCodes.Status200OK, _directorService.FilterMoviesByCountry(country));
             }
             catch (UserException ex)
             {

@@ -5802,11 +5802,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Com\\Desktop\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.Helpers\\BojanDamchevski.MovieApp.Helpers.csproj",
+      "projectUniqueName": "C:\\Users\\Com\\Desktop\\Projects\\MovieApp-API-Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.Helpers\\BojanDamchevski.MovieApp.Helpers.csproj",
       "projectName": "BojanDamchevski.MovieApp.Helpers",
-      "projectPath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.Helpers\\BojanDamchevski.MovieApp.Helpers.csproj",
+      "projectPath": "C:\\Users\\Com\\Desktop\\Projects\\MovieApp-API-Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.Helpers\\BojanDamchevski.MovieApp.Helpers.csproj",
       "packagesPath": "C:\\Users\\Com\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.Helpers\\obj\\",
+      "outputPath": "C:\\Users\\Com\\Desktop\\Projects\\MovieApp-API-Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.Helpers\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Com\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5823,11 +5823,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Com\\Desktop\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.DataAccess\\BojanDamchevski.MovieApp.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.DataAccess\\BojanDamchevski.MovieApp.DataAccess.csproj"
+            "C:\\Users\\Com\\Desktop\\Projects\\MovieApp-API-Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.DataAccess\\BojanDamchevski.MovieApp.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Com\\Desktop\\Projects\\MovieApp-API-Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.DataAccess\\BojanDamchevski.MovieApp.DataAccess.csproj"
             },
-            "C:\\Users\\Com\\Desktop\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.Services\\BojanDamchevski.MovieApp.Services.csproj": {
-              "projectPath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.Services\\BojanDamchevski.MovieApp.Services.csproj"
+            "C:\\Users\\Com\\Desktop\\Projects\\MovieApp-API-Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.Services\\BojanDamchevski.MovieApp.Services.csproj": {
+              "projectPath": "C:\\Users\\Com\\Desktop\\Projects\\MovieApp-API-Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.Services\\BojanDamchevski.MovieApp.Services.csproj"
             }
           }
         }

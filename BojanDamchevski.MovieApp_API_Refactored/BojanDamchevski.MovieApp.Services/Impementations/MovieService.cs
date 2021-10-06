@@ -4,6 +4,7 @@ using BojanDamchevski.MovieApp.Domain.Models;
 using BojanDamchevski.MovieApp.DTOs.MovieDTOs;
 using BojanDamchevski.MovieApp.Mappers;
 using BojanDamchevski.MovieApp.Services.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -23,6 +24,16 @@ namespace BojanDamchevski.MovieApp.Services.Impementations
             _movieRepository.Insert(newMovie);
         }
 
+        public void DeleteMovie(int id)
+        {
+            Movie movie = _movieRepository.GetById(id);
+            if (movie == null)
+            {
+                throw new Exception("Movie not found");
+            }
+            _movieRepository.Delete(movie.Id);
+        }
+
         public List<MovieDTO> GetAll()
         {
             return _movieRepository.GetAll().Select(x => x.ToMovieDTO()).ToList();
@@ -30,7 +41,18 @@ namespace BojanDamchevski.MovieApp.Services.Impementations
 
         public MovieDTO GetById(int id)
         {
-            return _movieRepository.GetById(id).ToMovieDTO();
+            Movie movie = _movieRepository.GetById(id);
+            if (movie == null)
+            {
+                throw new Exception("Movie not found");
+            }
+            return movie.ToMovieDTO();
+        }
+
+        public void UpdateMovie(MovieDTO movieDTO)
+        {
+            Movie movie = movieDTO.ToMovie();
+            _movieRepository.Update(movie);
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ed/PQDTAaN/yryhw4hMhMA/I13Od0yx1UJokPn7owUwMqEG3CRa1lNtGmF67QvDOVls9S2/sGqdUYz4WtbW6Bw==",
+  "dgSpecHash": "lMnLQlnts6nNU0HurO8XlCGV1Rzjs4mADGe2ugiSMNE518CyMUx7v3alPRnLe3mdO1XFTZ1KFBvk5fvv/GM/1Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.Helpers\\BojanDamchevski.MovieApp.Helpers.csproj",
+  "projectFilePath": "C:\\Users\\Com\\Desktop\\Projects\\MovieApp-API-Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.Helpers\\BojanDamchevski.MovieApp.Helpers.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Com\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Com\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

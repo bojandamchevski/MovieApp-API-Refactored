@@ -10,3 +10,15 @@ C:\Users\Com\Desktop\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.Mov
 C:\Users\Com\Desktop\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.DTOs\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.DTOs.csproj.CopyComplete
 C:\Users\Com\Desktop\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.DTOs\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.DTOs.dll
 C:\Users\Com\Desktop\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.DTOs\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.DTOs.pdb
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.DTOs\bin\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.DTOs.deps.json
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.DTOs\bin\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.DTOs.dll
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.DTOs\bin\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.DTOs.pdb
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.DTOs\bin\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.Domain.dll
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.DTOs\bin\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.Domain.pdb
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.DTOs\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.DTOs.csproj.AssemblyReference.cache
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.DTOs\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.DTOs.AssemblyInfoInputs.cache
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.DTOs\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.DTOs.AssemblyInfo.cs
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.DTOs\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.DTOs.csproj.CoreCompileInputs.cache
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.DTOs\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.DTOs.csproj.CopyComplete
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.DTOs\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.DTOs.dll
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.DTOs\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.DTOs.pdb

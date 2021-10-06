@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CGwaTAWDv1aRZOm5b97+G70YuZ8ctD4nm2rTYvLsEVRnQjE5nXHl0opcgONFmS6/B2CmnhKkuAnzs0jJEsD37A==",
+  "dgSpecHash": "yw7J3H9ol+/k2TO6axrQ7DMu2rvK+7pu3ShG5QH09/PUD+CfglXFHg1aJc6/Syu67j62Bq/d6I9Yxvg34Yqh8Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.DataAccess\\BojanDamchevski.MovieApp.DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\Com\\Desktop\\Projects\\MovieApp-API-Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.DataAccess\\BojanDamchevski.MovieApp.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Com\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Com\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

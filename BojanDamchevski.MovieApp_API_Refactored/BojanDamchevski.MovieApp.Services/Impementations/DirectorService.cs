@@ -1,8 +1,10 @@
 ﻿using BojanDamchevski.MovieApp.DataAccess.Interfaces;
 using BojanDamchevski.MovieApp.Domain.Models;
 using BojanDamchevski.MovieApp.DTOs.DirectorDTOs;
+using BojanDamchevski.MovieApp.DTOs.MovieDTOs;
 using BojanDamchevski.MovieApp.Mappers;
 using BojanDamchevski.MovieApp.Services.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -22,6 +24,21 @@ namespace BojanDamchevski.MovieApp.Services.Impementations
             _directorRepository.Insert(newDirector);
         }
 
+        public void DeleteDirector(int id)
+        {
+            Director director = _directorRepository.GetById(id);
+            if (director == null)
+            {
+                throw new Exception("Director not found");
+            }
+            _directorRepository.Delete(director.Id);
+        }
+
+        public List<MovieDTO> FilterMoviesByCountry(string country)
+        {
+            return _directorRepository.GetAll().Where(x => x.Country.Equals(country, StringComparison.InvariantCultureIgnoreCase)).SelectMany(x => x.Movies.Select(n=>n.ToMovieDTO())).ToList();
+        }
+
         public List<DirectorDTO> GetAll()
         {
             return _directorRepository.GetAll().Select(x => x.ToDirectorDTO()).ToList();
@@ -29,7 +46,18 @@ namespace BojanDamchevski.MovieApp.Services.Impementations
 
         public DirectorDTO GetById(int id)
         {
-            return _directorRepository.GetById(id).ToDirectorDTO();
+            Director director = _directorRepository.GetById(id);
+            if (director == null)
+            {
+                throw new Exception("Director not found");
+            }
+            return director.ToDirectorDTO();
+        }
+
+        public void UpdateDirector(DirectorDTO directorDTO)
+        {
+            Director director = directorDTO.ToDirector();
+            _directorRepository.Update(director);
         }
     }
 }

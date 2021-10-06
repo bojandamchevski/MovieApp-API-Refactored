@@ -9,5 +9,7 @@ namespace BojanDamchevski.MovieApp.Services.Interfaces
         List<MovieDTO> GetAll();
         MovieDTO GetById(int id);
         void AddNewMovie(MovieDTO entity);
+        void DeleteMovie(int id);
+        void UpdateMovie(MovieDTO movieDTO);
     }
 }

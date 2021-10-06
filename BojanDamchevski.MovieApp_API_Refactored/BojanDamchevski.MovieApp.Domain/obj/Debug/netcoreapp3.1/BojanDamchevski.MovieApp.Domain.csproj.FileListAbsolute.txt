@@ -7,3 +7,12 @@ C:\Users\Com\Desktop\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.Mov
 C:\Users\Com\Desktop\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.Domain\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.Domain.csproj.CoreCompileInputs.cache
 C:\Users\Com\Desktop\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.Domain\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.Domain.dll
 C:\Users\Com\Desktop\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.Domain\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.Domain.pdb
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.Domain\bin\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.Domain.deps.json
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.Domain\bin\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.Domain.dll
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.Domain\bin\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.Domain.pdb
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.Domain\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.Domain.csproj.AssemblyReference.cache
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.Domain\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.Domain.AssemblyInfoInputs.cache
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.Domain\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.Domain.AssemblyInfo.cs
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.Domain\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.Domain\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.Domain.dll
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.Domain\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.Domain.pdb

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Lshz5i9BSdoooZ0GeywZJiadMBtxHV0lloApGfyi0fuNmCBJ3V/udiNH4bNtrg0OcP1nx6rOKCfcQws8HgX/Uw==",
+  "dgSpecHash": "1awDrf0jlnZDsQBb8e4lFkZpkYjsJbhjn2dQLhZiwRDNagPXl0qZERepN9gyBMiBV3HWUWp6F3uHaKp8bCOvmw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.Domain\\BojanDamchevski.MovieApp.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Com\\Desktop\\Projects\\MovieApp-API-Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.Domain\\BojanDamchevski.MovieApp.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
