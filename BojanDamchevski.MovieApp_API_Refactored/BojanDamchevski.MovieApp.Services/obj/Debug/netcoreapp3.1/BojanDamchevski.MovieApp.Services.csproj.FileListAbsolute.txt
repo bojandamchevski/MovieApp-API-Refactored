@@ -34,3 +34,5 @@ C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_A
 C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.Services\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.Services.csproj.CopyComplete
 C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.Services\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.Services.dll
 C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.Services\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.Services.pdb
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.Services\bin\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.Shared.dll
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp.Services\bin\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.Shared.pdb

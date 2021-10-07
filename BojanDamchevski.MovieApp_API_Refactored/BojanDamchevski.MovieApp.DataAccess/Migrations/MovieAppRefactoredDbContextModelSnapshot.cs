@@ -128,6 +128,69 @@ namespace BojanDamchevski.MovieApp.DataAccess.Migrations
                         });
                 });
 
+            modelBuilder.Entity("BojanDamchevski.MovieApp.Domain.Models.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("FirstName")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("LastName")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasMaxLength(18)
+                        .HasColumnType("nvarchar(18)");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            FirstName = "Bojan",
+                            LastName = "Damchevski",
+                            Password = "Test123456!",
+                            Role = "User",
+                            Username = "bdamcevski"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            FirstName = "Jovana",
+                            LastName = "Miskimovska",
+                            Password = "Test123456!",
+                            Role = "SuperAdmin",
+                            Username = "jmiskimovska"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            FirstName = "Stefan",
+                            LastName = "Trajkov",
+                            Password = "Test123456!",
+                            Role = "Admin",
+                            Username = "strajkov"
+                        });
+                });
+
             modelBuilder.Entity("BojanDamchevski.MovieApp.Domain.Models.Movie", b =>
                 {
                     b.HasOne("BojanDamchevski.MovieApp.Domain.Models.Director", "Director")

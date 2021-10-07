@@ -2,6 +2,7 @@
 using BojanDamchevski.MovieApp.DTOs.MovieDTOs;
 using BojanDamchevski.MovieApp.Services.Interfaces;
 using BojanDamchevski.MovieApp.Shared.CustomExceptions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;

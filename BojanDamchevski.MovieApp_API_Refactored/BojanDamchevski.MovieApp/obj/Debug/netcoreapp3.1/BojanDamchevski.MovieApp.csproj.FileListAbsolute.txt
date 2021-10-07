@@ -168,3 +168,4 @@ C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_A
 C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.dll
 C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.pdb
 C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp\obj\Debug\netcoreapp3.1\BojanDamchevski.MovieApp.genruntimeconfig.cache
+C:\Users\Com\Desktop\Projects\MovieApp-API-Refactored\BojanDamchevski.MovieApp_API_Refactored\BojanDamchevski.MovieApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll

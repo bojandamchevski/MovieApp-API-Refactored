@@ -8,6 +8,7 @@
     <ProjectReference Include="..\BojanDamchevski.MovieApp.DataAccess\BojanDamchevski.MovieApp.DataAccess.csproj" />
     <ProjectReference Include="..\BojanDamchevski.MovieApp.Domain\BojanDamchevski.MovieApp.Domain.csproj" />
     <ProjectReference Include="..\BojanDamchevski.MovieApp.Mappers\BojanDamchevski.MovieApp.Mappers.csproj" />
+    <ProjectReference Include="..\BojanDamchevski.MovieApp.Shared\BojanDamchevski.MovieApp.Shared.csproj" />
   </ItemGroup>
 
 </Project>

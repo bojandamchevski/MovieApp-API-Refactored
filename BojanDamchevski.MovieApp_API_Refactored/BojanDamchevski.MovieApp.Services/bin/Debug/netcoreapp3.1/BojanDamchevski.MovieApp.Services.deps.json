@@ -10,7 +10,8 @@
         "dependencies": {
           "BojanDamchevski.MovieApp.DataAccess": "1.0.0",
           "BojanDamchevski.MovieApp.Domain": "1.0.0",
-          "BojanDamchevski.MovieApp.Mappers": "1.0.0"
+          "BojanDamchevski.MovieApp.Mappers": "1.0.0",
+          "BojanDamchevski.MovieApp.Shared": "1.0.0"
         },
         "runtime": {
           "BojanDamchevski.MovieApp.Services.dll": {}
@@ -1087,6 +1088,11 @@
         "runtime": {
           "BojanDamchevski.MovieApp.Mappers.dll": {}
         }
+      },
+      "BojanDamchevski.MovieApp.Shared/1.0.0": {
+        "runtime": {
+          "BojanDamchevski.MovieApp.Shared.dll": {}
+        }
       }
     }
   },
@@ -1770,6 +1776,11 @@
       "sha512": ""
     },
     "BojanDamchevski.MovieApp.Mappers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BojanDamchevski.MovieApp.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1541,13 +1541,24 @@
         "dependencies": {
           "BojanDamchevski.MovieApp.DataAccess": "1.0.0",
           "BojanDamchevski.MovieApp.Domain": "1.0.0",
-          "BojanDamchevski.MovieApp.Mappers": "1.0.0"
+          "BojanDamchevski.MovieApp.Mappers": "1.0.0",
+          "BojanDamchevski.MovieApp.Shared": "1.0.0"
         },
         "compile": {
           "bin/placeholder/BojanDamchevski.MovieApp.Services.dll": {}
         },
         "runtime": {
           "bin/placeholder/BojanDamchevski.MovieApp.Services.dll": {}
+        }
+      },
+      "BojanDamchevski.MovieApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/BojanDamchevski.MovieApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BojanDamchevski.MovieApp.Shared.dll": {}
         }
       }
     }
@@ -5786,6 +5797,11 @@
       "type": "project",
       "path": "../BojanDamchevski.MovieApp.Services/BojanDamchevski.MovieApp.Services.csproj",
       "msbuildProject": "../BojanDamchevski.MovieApp.Services/BojanDamchevski.MovieApp.Services.csproj"
+    },
+    "BojanDamchevski.MovieApp.Shared/1.0.0": {
+      "type": "project",
+      "path": "../BojanDamchevski.MovieApp.Shared/BojanDamchevski.MovieApp.Shared.csproj",
+      "msbuildProject": "../BojanDamchevski.MovieApp.Shared/BojanDamchevski.MovieApp.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {

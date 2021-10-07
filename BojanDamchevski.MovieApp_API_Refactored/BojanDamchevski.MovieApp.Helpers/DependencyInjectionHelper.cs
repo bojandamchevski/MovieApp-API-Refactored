@@ -24,12 +24,14 @@ namespace BojanDamchevski.MovieApp.Helpers
         {
             services.AddTransient<IRepository<Movie>, MovieRepository>();
             services.AddTransient<IRepository<Director>, DirectorRepository>();
+            services.AddTransient<IUserRepository, UserRepository>();
         }
 
         public static void InjectServices(IServiceCollection services)
         {
             services.AddTransient<IMovieService, MovieService>();
             services.AddTransient<IDirectorService, DirectorService>();
+            services.AddTransient<IUserService, UserService>();
         }
     }
 }

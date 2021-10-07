@@ -1534,6 +1534,16 @@
         "runtime": {
           "bin/placeholder/BojanDamchevski.MovieApp.Mappers.dll": {}
         }
+      },
+      "BojanDamchevski.MovieApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/BojanDamchevski.MovieApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BojanDamchevski.MovieApp.Shared.dll": {}
+        }
       }
     }
   },
@@ -5766,13 +5776,19 @@
       "type": "project",
       "path": "../BojanDamchevski.MovieApp.Mappers/BojanDamchevski.MovieApp.Mappers.csproj",
       "msbuildProject": "../BojanDamchevski.MovieApp.Mappers/BojanDamchevski.MovieApp.Mappers.csproj"
+    },
+    "BojanDamchevski.MovieApp.Shared/1.0.0": {
+      "type": "project",
+      "path": "../BojanDamchevski.MovieApp.Shared/BojanDamchevski.MovieApp.Shared.csproj",
+      "msbuildProject": "../BojanDamchevski.MovieApp.Shared/BojanDamchevski.MovieApp.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "BojanDamchevski.MovieApp.DataAccess >= 1.0.0",
       "BojanDamchevski.MovieApp.Domain >= 1.0.0",
-      "BojanDamchevski.MovieApp.Mappers >= 1.0.0"
+      "BojanDamchevski.MovieApp.Mappers >= 1.0.0",
+      "BojanDamchevski.MovieApp.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5810,6 +5826,9 @@
             },
             "C:\\Users\\Com\\Desktop\\Projects\\MovieApp-API-Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.Mappers\\BojanDamchevski.MovieApp.Mappers.csproj": {
               "projectPath": "C:\\Users\\Com\\Desktop\\Projects\\MovieApp-API-Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.Mappers\\BojanDamchevski.MovieApp.Mappers.csproj"
+            },
+            "C:\\Users\\Com\\Desktop\\Projects\\MovieApp-API-Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.Shared\\BojanDamchevski.MovieApp.Shared.csproj": {
+              "projectPath": "C:\\Users\\Com\\Desktop\\Projects\\MovieApp-API-Refactored\\BojanDamchevski.MovieApp_API_Refactored\\BojanDamchevski.MovieApp.Shared\\BojanDamchevski.MovieApp.Shared.csproj"
             }
           }
         }

@@ -9,11 +9,12 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace BojanDamchevski.MovieApp.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class MoviesController : ControllerBase
@@ -26,7 +27,6 @@ namespace BojanDamchevski.MovieApp.Controllers
         }
 
         [HttpGet("get-all-movies")]
-
         public ActionResult<List<MovieDTO>> GetAll()
         {
             try
@@ -57,6 +57,7 @@ namespace BojanDamchevski.MovieApp.Controllers
         }
 
         [HttpPost("add-new-movie")]
+        [Authorize(Roles = "Admin")]
         public ActionResult<MovieDTO> AddNewMovie([FromQuery] MovieDTO movieDTO)
         {
             try
@@ -75,6 +76,11 @@ namespace BojanDamchevski.MovieApp.Controllers
         {
             try
             {
+                var userName = User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Name);
+                if (userName.Value != "SuperAdmin")
+                {
+                    return StatusCode(StatusCodes.Status403Forbidden);
+                }
                 if (id > 0)
                 {
                     _movieService.DeleteMovie(id);
@@ -93,6 +99,7 @@ namespace BojanDamchevski.MovieApp.Controllers
         }
 
         [HttpPut("update-movie")]
+        [Authorize(Roles = "Admin")]
         public IActionResult UpdateMovie([FromBody] MovieDTO movieDTO)
         {
             try
@@ -115,6 +122,7 @@ namespace BojanDamchevski.MovieApp.Controllers
         }
 
         [HttpGet("filter-by-genre-year")]
+        [AllowAnonymous]
         public ActionResult<List<MovieDTO>> Filter(MovieGenre genre, int year)
         {
             try

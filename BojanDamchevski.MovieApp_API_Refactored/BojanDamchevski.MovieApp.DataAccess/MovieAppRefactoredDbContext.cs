@@ -17,10 +17,27 @@ namespace BojanDamchevski.MovieApp.DataAccess
 
         public DbSet<Movie> Movies { get; set; }
         public DbSet<Director> Directors { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            //Entity relations
+
+            modelBuilder.Entity<Director>()
+                .HasMany(x => x.Movies)
+                .WithOne(x => x.Director)
+                .HasForeignKey(x => x.DirectorId);
+
+            modelBuilder.Entity<Movie>()
+                .HasOne(x => x.Director)
+                .WithMany(x => x.Movies)
+                .HasForeignKey(x => x.DirectorId);
+
+            modelBuilder.Entity<User>();
+
+            //Entity validations
 
             modelBuilder.Entity<Director>()
                 .Property(x => x.FirstName)
@@ -44,6 +61,57 @@ namespace BojanDamchevski.MovieApp.DataAccess
                 .Property(x => x.Title)
                 .HasMaxLength(100)
                 .IsRequired();
+
+            modelBuilder.Entity<User>()
+                .Property(x => x.FirstName)
+                .HasMaxLength(50);
+
+            modelBuilder.Entity<User>()
+                .Property(x => x.LastName)
+                .HasMaxLength(50);
+
+            modelBuilder.Entity<User>()
+                .Property(x => x.Username)
+                .HasMaxLength(30)
+                .IsRequired();
+
+            modelBuilder.Entity<User>()
+                .Property(x => x.Password)
+                .HasMaxLength(18)
+                .IsRequired();
+
+            modelBuilder.Entity<User>()
+                .Property(x => x.Role)
+                .IsRequired();
+
+            modelBuilder.Entity<User>()
+                .HasData(new User()
+                {
+                    Id = 1,
+                    FirstName = "Bojan",
+                    LastName = "Damchevski",
+                    Username = "bdamcevski",
+                    Password = "Test123456!",
+                    Role = "User"
+                },
+                new User()
+                {
+                    Id = 2,
+                    FirstName = "Jovana",
+                    LastName = "Miskimovska",
+                    Username = "jmiskimovska",
+                    Password = "Test123456!",
+                    Role = "SuperAdmin"
+                },
+                new User()
+                {
+                    Id = 3,
+                    FirstName = "Stefan",
+                    LastName = "Trajkov",
+                    Username = "strajkov",
+                    Password = "Test123456!",
+                    Role = "Admin"
+                });
 
             modelBuilder.Entity<Movie>()
                 .HasData(
